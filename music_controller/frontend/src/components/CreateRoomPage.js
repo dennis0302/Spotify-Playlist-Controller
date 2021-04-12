@@ -76,7 +76,6 @@ export default class CreateRoomPage extends Component {
           errorMsg: "Error updating room...",
         });
       }
-      console.log('updatecallback called')
       this.props.updateCallback();
     });
   }
@@ -117,7 +116,6 @@ export default class CreateRoomPage extends Component {
   }
 
   render() {
-    console.log('createroompagerender1')
     const title = this.props.update ? "Update Room" : "Create your own playlist room";
 
     return (

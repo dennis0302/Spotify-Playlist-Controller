@@ -55,7 +55,6 @@ export default class Room extends Component {
   }
 
   authenticateSpotify() {
-    console.log('authenticateSpotify')
     fetch("/spotify/is-authenticated")
       .then((response) => response.json())
       .then((data) => {
@@ -73,11 +72,9 @@ export default class Room extends Component {
   }
 
   getCurrentSong() {
-    console.log('getCurrentSong')
     fetch("/spotify/current-song")
       .then((response) => {
         if (!response.ok) {
-          console.log('response not ok')
           return {};
         } else {
           return response.json();
