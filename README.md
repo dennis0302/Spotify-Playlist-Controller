@@ -28,9 +28,20 @@ Fill credentials in music_controller/spotify/credentials.py
 
 
 ```
+cd music_controller
 python manage.py runserver
 ```
 
 ```
+cd music_controller
+cd frontend
 npm run dev
+```
+
+or
+
+```
+cd music_controller
+cd frontend
+npm run build
 ```
